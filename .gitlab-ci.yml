@@ -1,0 +1,29 @@
+stages:
+  - build
+  - publish
+
+build:
+  image: harbor.croz.net/docker/library/node:18
+  stage: build
+  before_script:
+    - npm install yarn
+  script:
+    - yarn install
+    # CI=false set to ignore warnings as errors
+    - CI=false yarn run build
+  artifacts:
+    paths:
+      - ./dist
+
+publish:
+  image: harbor.croz.net/docker/library/node:18
+  stage: publish
+  dependencies:
+    - build
+  before_script:
+    - npm install yarn
+  script:
+    - CI=false yarn publish
+  artifacts:
+    paths:
+      - ./dist

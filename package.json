@@ -1,0 +1,68 @@
+{
+  "author": {
+    "name": "CROZ",
+    "email": "devops@croz.net",
+    "url": "https://croz.net/news/backstage-plugin-ibm-apic"
+  },
+  "name": "@croz/plugin-ibm-apic-backend",
+  "version": "1.0.3",
+  "main": "dist/index.cjs.js",
+  "types": "dist/index.d.ts",
+  "license": "Apache-2.0",
+  "private": false,
+  "engines": {
+    "node": "18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.cjs.js",
+    "types": "dist/index.d.ts"
+  },
+  "backstage": {
+    "role": "backend-plugin"
+  },
+  "scripts": {
+    "start": "env-cmd backstage-cli package start",
+    "build": "yarn tsc && backstage-cli package build",
+    "lint": "backstage-cli package lint",
+    "test": "backstage-cli package test",
+    "clean": "backstage-cli package clean",
+    "prepack": "backstage-cli package prepack",
+    "postpack": "backstage-cli package postpack"
+  },
+  "dependencies": {
+    "@backstage/backend-common": "^0.19.1",
+    "@backstage/backend-plugin-api": "^0.5.2",
+    "@backstage/backend-tasks": "^0.5.8",
+    "@backstage/catalog-model": "^1.4.2",
+    "@backstage/config": "^1.0.8",
+    "@backstage/core-plugin-api": "^1.6.0",
+    "@backstage/plugin-catalog-node": "^1.4.4",
+    "@backstage/version-bridge": "^1.0.7",
+    "@sniptt/monads": "^0.5.10",
+    "@types/express": "*",
+    "@types/lodash": "^4.14.202",
+    "@types/node-fetch": "^2.6.11",
+    "@types/uuid": "^9.0.8",
+    "express": "^4.17.1",
+    "express-promise-router": "^4.1.0",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.7",
+    "uuid": "^9.0.1",
+    "winston": "^3.2.1",
+    "yn": "^4.0.0"
+  },
+  "devDependencies": {
+    "@backstage/cli": "^0.22.9",
+    "@types/supertest": "2.0.12",
+    "env-cmd": "^10.1.0",
+    "msw": "^1.0.0",
+    "npm": "^10.4.0",
+    "publish": "^0.6.0",
+    "supertest": "^6.2.4"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://croz.net"
+}
