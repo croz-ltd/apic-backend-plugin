@@ -2,9 +2,9 @@
 
 Welcome to the APIC EntityProvider backend plugin, a plugin that will bring your IBM APIC data to Backstage!
 
-Read more about why we built this plugin and what else is available [here]([https://croz.net/news/backstage-plugin-ibm-apic/](https://croz.net/news/backstage-plugin-ibm-apic/?utm_source=newsletter&utm_medium=github&utm_campaign=Tool+of+Choice)).
+Read more about why we built this plugin and what else is available [here](https://croz.net/news/backstage-plugin-ibm-apic/?utm_source=newsletter&utm_medium=github&utm_campaign=Tool+of+Choice).
 
-Read about [our journey with Backstage]([https://croz.net/news/tool-of-choice-backstage/](https://croz.net/news/tool-of-choice-backstage/?utm_source=newsletter&utm_medium=github&utm_campaign=Tool+of+Choice)) and how me successfully integrated it into our toolchain.
+Read about [our journey with Backstage](https://croz.net/news/tool-of-choice-backstage/?utm_source=newsletter&utm_medium=github&utm_campaign=Tool+of+Choice) and how me successfully integrated it into our toolchain.
 
 ![](./docs/assets/backstage-apic-publication.png)
 
