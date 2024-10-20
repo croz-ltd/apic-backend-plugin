@@ -36,7 +36,7 @@ yarn add @croz/plugin-ibm-apic-backend
 yarn install
 ```
 
-Add proxy config to the app-config.yaml file:
+Add provider config to the app-config.yaml file:
 
 ```
 catalog:
